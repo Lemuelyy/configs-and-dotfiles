@@ -1,50 +1,62 @@
 XTerm.termName: xterm-256color
-!!XTerm.vt100.foreground: white
-!!XTerm.vt100.background: black
 XTerm.VT100*dynamicColors: on
 XTerm.vt100.locale: true
 
-!!XTerm.vt100*faceName: fixed:size=17
-XTerm*faceName: Fira Code Nerd Font Mono
-XTerm*renderFont: true
-XTerm*faceSize: 16
+xterm*faceName: Fira Code
+xterm*renderFont: true
+xterm*faceSize: 17
 
-XTerm.vt100.selectToClipboard: true
-xterm*VT100.Translations: #override \
-    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+- VT100.selectToClipboard: true
+*VT100.backarrowKey: false
+*VT100.Translations: #override \
+	<Key>Delete: string("\033[3~")\n\
+	<Key>Home: string("\033[1~")\n\
+	<Key>End: string("\033[4~")\n\
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD)\n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+*ttyModes: erase ^?
 
-*background: #1E1E2E
-*foreground: #CDD6F4
-
-! black
-*color0: #45475A
-*color8: #585B70
-
-! red
-*color1: #F38BA8
-*color9: #F38BA8
-
-! green
-*color2: #A6E3A1
-*color10: #A6E3A1
-
-! yellow
-*color3: #F9E2AF
-*color11: #F9E2AF
-
-! blue
-*color4: #89B4FA
-*color12: #89B4FA
-
-! magenta
-*color5: #F5C2E7
-*color13: #F5C2E7
-
-! cyan
-*color6: #94E2D5
-*color14: #94E2D5
-
-! white
-*color7: #BAC2DE
-*color15: #A6ADC8
+! link:https://github.com/janoamaral/Xresources-themes/blob/master/iterm-Bright_Lights.Xresources
+! Generated with :
+! XRDB2Xreources.py
+!
+*.foreground:  #b3c9d7
+*.background:  #191919
+*.cursorColor: #f34b00
+!
+! Black
+*.color0:      #191919
+*.color8:      #191919
+!
+! Red
+*.color1:      #ff355b
+*.color9:      #ff355b
+!
+! Green
+*.color2:      #b7e876
+*.color10:     #b7e876
+!
+! Yellow
+*.color3:      #ffc251
+*.color11:     #ffc251
+!
+! Blue
+*.color4:      #76d4ff
+*.color12:     #76d5ff
+!
+! Magenta
+*.color5:      #ba76e7
+*.color13:     #ba76e7
+!
+! Cyan
+*.color6:      #6cbfb5
+*.color14:     #6cbfb5
+!
+! White
+*.color7:      #c2c8d7
+*.color15:     #c2c8d7
+!
+! Bold, Italic, Underline
+*.colorBD:     #9fb3c1
+!*.colorIT:
+!*.colorUL:
