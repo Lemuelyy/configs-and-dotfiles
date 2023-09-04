@@ -6,7 +6,7 @@ xterm*faceName: Fira Code
 xterm*renderFont: true
 xterm*faceSize: 17
 
-- VT100.selectToClipboard: true
+*VT100.selectToClipboard: true
 *VT100.backarrowKey: false
 *VT100.Translations: #override \
 	<Key>Delete: string("\033[3~")\n\
